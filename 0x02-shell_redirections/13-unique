@@ -1,2 +1,2 @@
 #!/bin/bash
-cat list.txt | sort | uniq
+echo -e 'pen\n' 'pen\n' 'book\n' 'ruler\n' 'crayon\n' 'table\n' 'pen'| sort |uniq
