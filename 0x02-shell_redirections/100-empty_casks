@@ -1,2 +1,2 @@
 #!/bin/bash
-printf"%s $(find ./ -empty \n)"
+echo $(find ./ -type f -type d -empty)
