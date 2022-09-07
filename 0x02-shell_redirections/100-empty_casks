@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -printf"%d\n"
+find . -empty -printf"%H\n"
