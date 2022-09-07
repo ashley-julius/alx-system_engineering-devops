@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -R |grep ^"-"| rm *.js
+grep ^"-"| rm *.js
