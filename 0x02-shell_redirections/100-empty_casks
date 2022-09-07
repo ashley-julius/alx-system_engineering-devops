@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(find ./ -type f -type d -empty)
+echo $(find ./ -empty)
