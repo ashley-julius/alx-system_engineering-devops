@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#FILENAME: 1-for_best_school, prints a string ten times using loop
+
+name="Best School"
+for _ in {1..10}
+do 
+	echo "$name" 
+done
