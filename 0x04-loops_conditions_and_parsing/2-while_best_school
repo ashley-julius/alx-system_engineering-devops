@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This project iterates 10 times using while loop
+name="Best School"
+count=0
+while ((count < 10))
+do
+	echo "$name"
+	count=$((count + 1))
+done
