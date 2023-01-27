@@ -6,6 +6,7 @@ count=1
 while ((count <= 10))
 do
 	if ((count == 9)); then
+		echo "$name"
 		echo "Hi"
 	else
 		echo "$name"
