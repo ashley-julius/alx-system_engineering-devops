@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This project displays different string at different times
+name="Best School"
+count=1
+while ((count <= 10))
+do
+	if ((count == 4)); then
+		echo "bad luck"
+	elif ((count == 8)); then
+		echo "good luck"
+	else
+		echo "$name"
+	fi
+	count=$((count + 1))
+done
