@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This project prints a string many times using until
+name="Best School"
+count=1
+until ((count > 10))
+do
+	echo "$name"
+	count=$((count + 1))
+done
