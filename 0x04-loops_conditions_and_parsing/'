@@ -10,5 +10,5 @@ do
 		echo "$i"
 		((i += 1))
 	done
-	((hour += 1))
+	((h += 1))
 done
