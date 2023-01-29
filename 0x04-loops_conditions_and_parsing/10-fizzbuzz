@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This project teaches us how to use if, elif and else statement in bash
+
+for num in {1..100}
+do
+	if [[ $(( $num % 3 )) -eq 0 && $(( $num % 5 )) -eq 0 ]]; then
+		echo "FizzBuzz"
+	elif [[ $(( $num % 3 )) -eq 0 ]]; then
+		echo "Fizz"
+	elif [[ $(( $num % 5 )) -eq 0 ]]; then
+		echo "Buzz"
+	else
+		echo "$num"
+	fi
+done
