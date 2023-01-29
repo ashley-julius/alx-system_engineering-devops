@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This project teaches us how to extract different fields in a file
+# using the cut command 
+
+while read line;
+do
+	username=$( echo "$line" | cut -d: -f1 )
+	user_id=$( echo "$line" | cut -d: -f3 )
+	home_d=$( echo "$line" | cut -d: -f6 )
+	# print them to stdout
+	echo "$username:$user_id:$home_d"
+done < "/etc/passwd"
