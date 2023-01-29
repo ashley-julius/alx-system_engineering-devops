@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This project displays the time for 12 hours and 59 minutes
+hour=0
+i=1
+echo "Hour: 0"
+while ((i <= 59))
+do
+	echo "$i"
+	case $i in
+	  59)
+		hour=$((hour + 1))
+		echo "Hour: $hour"
+		i=0
+		;;
+	esac
+	i=$((i + 1))
+done
