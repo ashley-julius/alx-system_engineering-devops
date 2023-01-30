@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This project displays a string and sleeps for 2 secs before exit
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
