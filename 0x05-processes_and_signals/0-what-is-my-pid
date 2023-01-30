@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# This project teaches us how to display our own process id using $$
+echo "$$"
