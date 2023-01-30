@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This project teaches us how to kill a process using the kill command
+PID=$(pgrep -f "7-highlander")
+kill -9 "$PID"
