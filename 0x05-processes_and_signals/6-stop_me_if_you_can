@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This process terminates a process using the pkill command which
+# sends signal to the given pid
+pkill -f "4-to_infinity_and_beyond"
