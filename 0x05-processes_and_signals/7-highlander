@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This project allows us to execute a specified command when a certain
+# signal is received
+trap 'echo "I am invincible!!!"' SIGTERM
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
