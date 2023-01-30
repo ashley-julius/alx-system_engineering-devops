@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This project shows us how to kill a process without using ctrl-c
+PID=$(pgrep -f "4-to_infinity_and_beyond")
+kill "$PID"
