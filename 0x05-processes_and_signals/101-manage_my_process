@@ -21,12 +21,6 @@ stop_process()
 # creating the restart process function
 restart_process()
 {
-	PID=$(cat /var/run/my_process.pid)
-	kill -9 "$PID"
-	rm -f /var/run/my_process.pid
-	./manage_my_process
-	touch /var/run/my_process.pid
-	echo "$!" > /var/run/my_process.pid
 	echo "manage_my_process restarted"
 }
 
@@ -37,6 +31,8 @@ if [ "$1" == "start" ]; then
 elif [ "$1" == "stop" ]; then
 	stop_process
 elif [ "$1" == "restart" ]; then
+	stop_process
+	start_process
 	restart_process
 else
 	echo "Usage: manage_my_process {start|stop|restart}"
