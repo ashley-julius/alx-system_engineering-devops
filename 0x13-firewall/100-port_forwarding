@@ -1,4 +1,4 @@
-#
+#!/usr/bin/env bash
 # This file defines the ufw firewall rules
 # rules.before
 #
