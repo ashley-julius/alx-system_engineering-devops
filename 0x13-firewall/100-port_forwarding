@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
-# This file defines the ufw firewall rules
+
+#
+#This file defines the ufw firewall rules
 # rules.before
 #
 # Rules that should be run before the ufw command line added rules. Custom
