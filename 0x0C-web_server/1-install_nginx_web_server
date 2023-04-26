@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script configures nginx on our server
+
+# update package lists and install nginx
+apt-get -y update
+apt-get -y install nginx
+
+# Allow firewall to accept nginx http request
+ufw allow 'Nginx HTTP'
+
+echo "Hello World!" > /var/www/html/ubuntu_nginx_index.html
+
+# restarting nginx
+service nginx restart
