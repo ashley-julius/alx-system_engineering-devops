@@ -2,17 +2,9 @@
 # This script configures nginx on our server
 
 # update package lists and install nginx
-sudo apt-get -y update
+sudo apt-get update
 sudo apt-get -y install nginx
-
-# Allow firewall to accept nginx http request
 sudo ufw allow 'Nginx HTTP'
-
-# Allow full permissions
 sudo chmod '0777' /var/www/html/ubuntu_nginx_index.html
-
-# Writing the default page
 sudo echo "Hello World!" > /var/www/html/ubuntu_nginx_index.html
-
-# restarting nginx
 sudo service nginx restart
