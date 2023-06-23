@@ -1,32 +1,34 @@
-# :shell: 0x15- Using REST APIs! :shell:
+# API
 
-I have used many RESTful APIs in the past building out web applications and mobile applications. In this project we will be using python to grab data from REST endpoints. Hopefully I will learn more about best REST practices.
+- I fetched data from the
+[JSONPlaceholder REST API](https://jsonplaceholder.typicode.com/), and learned how
+to export it to either CSV or JSON format.
 
+## Tasks :page_with_curl:
 
-## :running: Getting Started
+* **0. Gather data from an API**
+  * [0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py): Python script
+  that returns information on the to-do list progress of a given employee ID.
+  * Usage: `python3 0-gather_data_from_an_API.py <employee ID>`.
+  * Output: `Employee <employee name> is done with tasks(<# completed tasks>/<total # tasks>):`
 
-* [Ubuntu 14.04 LTS](http://releases.ubuntu.com/14.04/) - Operating system reqd.
+* **1. Export to CSV**
+  * [1-export_to_CSV.py](./1-export_to_CSV.py): Python script exports to-do list
+  information of a given employee ID to CSV format.
+  * Usage: `python3 1-export_to_CSV.py <employee ID>`
+  * File name: `<user id>.csv`.
+  * Format: `"<user id>","<username>","<task completed status>","<task title>"`.
 
-## :warning: Prerequisites
+* **2. Export to JSON**
+  * [2-export_to_JSON.py](./2-export_to_JSON.py): Python script that exports
+  to-do list information of a given employee ID to JSON format.
+  * Usage: `python3 2-export_to_JSON.py <employee ID>`
+  * File name: `<user id>.json`
+  * Format: `{ "<user id>": [ {"task": "<task title>", "completed": <task completed status>, "username": "<username>"}}, ... ]}`
 
-* Must have `git` installed
-
-* Must have repository cloned
-
-
-```
-$ sudo apt-get install git
-```
-
-## :blue_book: Authors
-* **Bennett Dixon** - [@BennettDixon](https://github.com/BennettDixon)
-
-## :mag: License
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BennettDixon/holberton-system_engineering-devops/blob/master/LICENSE.md) file for details
-
-
-
-## :mega: Acknowledgments
-
-* Holberton School (providing guidance)
+* **3. Dictionary of list of dictionaries**
+  * [3-dictionary_of_list_of_dictionaries.py](./3-dictionary_of_list_of_dictionaries.py):
+  Python script that exports to-do list information for all employees to JSON format.
+  * Usage: `python3 3-dictionary_of_list_of_dictionaries.py`
+  * File name: `todo_all_employees.json`
+  * Format: `{ "<user id>": [ {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, ... ], "<user id>": [ {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, ... ]}`

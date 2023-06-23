@@ -1,31 +1,46 @@
-# :shell: 0x16- Using REST APIs -- Advanced! :shell:
+# API advanced
 
-In this project I will be using more third party APIS to gather data and practice using http methods to get data and reformat it into objects.
+- Querying Reddit API's.
 
-## :running: Getting Started
+## Tests :heavy_check_mark:
 
-* [Ubuntu 14.04 LTS](http://releases.ubuntu.com/14.04/) - Operating system reqd.
+* [tests](./tests): tests dir
 
-## :warning: Prerequisites
+## Function Prototypes :floppy_disk:
 
-* Must have `git` installed
+Prototypes for functions written in this project:
 
-* Must have repository cloned
+| File           | Prototype                               |
+| -------------- | --------------------------------------- |
+| `0-subs.py`    | `def number_of_subscribers(subreddit)`  |
+| `1-top_ten.py` | `def top_ten(subreddit)`                |
+| `2-recurse.py` | `def recurse(subreddit, hot_list=[])`   |
+| `100-count.py` | `def count_words(subreddit, word_list)` |
 
+## Tasks :page_with_curl:
 
-```
-$ sudo apt-get install git
-```
+* **0. How many subs?**
+  * [0-subs.py](./0-subs.py): Python function that returns the total number of
+  subscribers for a given subreddit.
+  * Returns `0` if an invalid subreddit is given.
 
-## :blue_book: Authors
-* **Bennett Dixon** - [@BennettDixon](https://github.com/BennettDixon)
+* **1. Top Ten**
+  * [1-top_ten.py](./1-top_ten.py): Python function that prints the top ten
+  hottest posts for a given subreddit.
+  * Prints `None` if an invalid subreddit is given.
 
-## :mag: License
+* **2. Recurse it!**
+  * [2-recurse.py](./2-recurse.py): Python function that recursively returns a
+  list of titles for all hot articles on a given subreddit.
+  * Returns `None` if no results are found on the given subreddit.
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BennettDixon/holberton-system_engineering-devops/blob/master/LICENSE.md) file for details
-
-
-
-## :mega: Acknowledgments
-
-* Holberton School (providing guidance)
+* **3. Count it!**
+  * [100-count.py](./100-count.py): Python function that recursively prints a
+  sorted count of given keywords parsed from titles of all hot articles on a given
+  subreddit.
+  * Keywords are case-insensitive and delimited by spaces.
+  * Results are printed in descending order by count.
+  * Words with identical counts are sorted alphabetically.
+  * Words with no matches are skipped.
+  * Results are based on the number of times a keyword appears - ie.,
+  `java java java` counts as three separate instances of `java`.
