@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# This file is used to connect to the server
-ssh ubuntu@54.172.73.17 -i ~/.ssh/id_rsa
