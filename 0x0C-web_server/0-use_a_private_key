@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# This project shows how to connect to our remote server
-ssh -i ~/.ssh/school ubuntu@18.234.249.144
