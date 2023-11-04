@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#This script shows us how to create a RSA key pair with name of file to store private key, number of bits and passphrase
-ssh-keygen -t rsa -N betty -b 4096 -f school
